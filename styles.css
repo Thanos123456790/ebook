@@ -1,0 +1,126 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #26d2c9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a box-icon {
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.social-icons a:hover {
+    color: #FF5733;
+    transform: scale(1.1);
+}
+
+.cta {
+    padding: 40px 0;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: #1c1ede;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FF5733;
+    transform: scale(1.05);
+}
+
+.website-image {
+    background: url('website-image.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.website-image img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Typing Animation */
+.typewriter-text {
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 1px solid white; /* Add a dynamic border */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0 auto; /* Center text horizontally */
+    letter-spacing: 4px; /* Adjust letter spacing */
+    animation: typing 3s steps(30, end) infinite; /* Typing animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

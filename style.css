@@ -1,0 +1,296 @@
+/* Define color variables for easy customization */
+:root {
+    --primary-color: #007acc; /* Main primary color (Blue) */
+    --background-color: #f0f0f0; /* Background color (Light Gray) */
+    --text-color: #333; /* Text color (Dark Gray) */
+    --secondary-text-color: #777; /* Secondary text color (Gray) */
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --accent-color: #FF5733; /* Accent color (Orange) */
+    --highlight-color: #FFD700; /* Highlight color (Gold) */
+    --light-background: #f5f5f5; /* Light Background (Lighter Gray) */
+    --footer-bg-color: #1e1e21; /* Footer Background (Dark Gray) */
+    --footer-text-color: #fff; /* Footer Text Color (White) */
+    --contact-bg-color: #69bde7; /* Contact Section Background (Blue) */
+    --contact-text-color: #fff; /* Contact Section Text Color (White) */
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: var(--accent-color); /* Change color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    padding: 10px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px; /* Limit the maximum height of the image */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+.caption h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caption p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Course Card Styles */
+.course-card {
+    background-color: white;
+    color: var(--text-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--box-shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.03); /* Scale up on hover */
+}
+
+.course-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--accent-color); /* Accent color on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* See More Button */
+.see-more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 20px auto;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.see-more-btn:hover {
+    background-color: var(--highlight-color); /* Highlight color on hover */
+}
+
+/* Creators Section Styles */
+.creators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.creator {
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+    min-width: 280px;
+    background-color: var(--light-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.creator img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--box-shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.creator img:hover {
+    transform: scale(1.1); /* Slight scale up on hover */
+}
+
+.creator h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.creator p {
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: var(--contact-bg-color);
+    color: var(--contact-text-color);
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--contact-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px var(--box-shadow-color);
+    animation: footerAnimation 0.5s ease;
+    margin-top: 30px;
+}
+
+/* Add animation to the footer */
+@keyframes footerAnimation {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .course-card {
+        max-width: 100%;
+    }
+
+    .creators .creator {
+        margin: 10px;
+        min-width: 100%;
+    }
+
+    .hero img {
+        max-height: 300px; /* Reduce max-height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .course-card {
+        padding: 15px;
+    }
+
+    .creators .creator {
+        min-width: 100%;
+    }
+}

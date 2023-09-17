@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Year and Semester</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Year and Semester</h1>
+    </header>
+
+    <main>
+        <section class="year-section">
+            <h2>Choose a Year</h2>
+            <div class="year-buttons">
+                <button class="year-button" data-year="1">1st Year</button>
+                <button class="year-button" data-year="2">2nd Year</button>
+                <button class="year-button" data-year="3">3rd Year</button>
+                <button class="year-button" data-year="4">4th Year</button>
+            </div>
+        </section>
+
+        <section class="semester-section">
+            <h2>Choose a Semester</h2>
+            <div class="semester-buttons">
+                <!-- Buttons for 1st Year -->
+                <button class="semester-button" data-year="1" data-semester="1">1st Semester</button>
+                <button class="semester-button" data-year="1" data-semester="2">2nd Semester</button>
+
+                <!-- Buttons for 2nd Year -->
+                <button class="semester-button" data-year="2" data-semester="1">3rd Semester</button>
+                <button class="semester-button" data-year="2" data-semester="2">4th Semester</button>
+
+                <!-- Buttons for 3rd Year -->
+                <button class="semester-button" data-year="3" data-semester="1">5th Semester</button>
+                <button class="semester-button" data-year="3" data-semester="2">6th Semester</button>
+
+                <!-- Buttons for 4th Year -->
+                <button class="semester-button" data-year="4" data-semester="1">7th Semester</button>
+                <button class="semester-button" data-year="4" data-semester="2">8th Semester</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="page.js"></script>
+</body>
+</html>
